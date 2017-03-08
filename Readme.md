@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Михайлова](https://up.htmlacademy.ru/adaptive/10/user/172479).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш] (https://htmlacademy.ru/profile/stakeout).
 
 ---
 
