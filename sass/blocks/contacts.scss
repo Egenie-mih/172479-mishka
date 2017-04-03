@@ -1,0 +1,135 @@
+.contacts {
+  @include container();
+  padding: 49px 0 39px;
+}
+.contacts__title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts__details {
+  color: $font-darkgrey;
+  padding: 0 30px;
+  margin-bottom: 37px;
+}
+.contacts__email {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 29px;
+}
+.contacts__address {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.contacts__name{
+  width: 78px;
+  line-height: 30px;
+}
+.contacts__value {
+  margin: 0;
+  width: 180px;
+  line-height: 30px;
+
+  &--link {
+    color: $font-black;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+  }
+}
+.contacts__to-write-us {
+  margin: 0 30px;
+}
+.contacts__map {
+  height: 457px;
+  margin-bottom: 39px;
+  background-color: #f3f1ea;
+  background-image: url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+
+@media #{$tablet-widths} {
+  .contacts {
+    padding: 84px 0 56px;
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0 50px;
+    margin-bottom: 49px;
+  }
+  .contacts__details {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 50px;
+    margin-bottom: 56px;
+  }
+  .contacts__email {
+    width: 50%;
+  }
+  .contacts__address {
+    width: 50%;
+  }
+  .contacts__value {
+    width: 230px;
+
+    &--link {
+      width: auto;
+    }
+  }
+  .contacts__to-write-us{
+    width: 230px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+}
+@media #{$desktop-widths} {
+  .contacts {
+    position: relative;
+    padding: 70px 50px 105px 225px;
+  }
+  .contacts__title {
+    padding: 0;
+    width: 350px;
+    margin-top: 70px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contacts__details{
+    width: 350px;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 79px;
+  }
+  .contacts__email {
+    width: 100%;
+  }
+  .contacts__address {
+    width: 100%;
+  }
+  .contacts__map{
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    width: 525px;
+  }
+  .contacts__to-write-us{
+    max-width: 350px;
+    margin: 0;
+  }
+}

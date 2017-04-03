@@ -1,0 +1,21 @@
+.page-footer {
+  padding: 23px 30px;
+  background-color: $bg-lightgrey;
+}
+.page-footer__logo {
+  display: none;
+}
+.page-footer__copyright {
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $font-black;
+}
+
+@media #{$tablet-widths} {
+  .page-footer {
+    padding: 50px;
+  }
+}

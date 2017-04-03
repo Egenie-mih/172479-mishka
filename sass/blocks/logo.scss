@@ -1,0 +1,27 @@
+.logo {
+  padding: 22px 0 15px;
+  border-bottom: #ececec solid 1px;
+  border-top: #ececec solid 1px;
+}
+
+.logo__link {
+  display: block;
+  text-align: center;
+}
+@media #{$tablet-widths} {
+  .logo {
+    border: 0;
+    width: 48%;
+    box-sizing: border-box;
+    border: 0;
+    padding: 15px 0;
+  }
+}
+@media #{$desktop-widths} {
+  .logo {
+    width: 150px;
+    margin-right: 100px;
+    padding: 8px 0 7px;
+    order: 3;
+  }
+}
