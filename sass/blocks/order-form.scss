@@ -1,0 +1,347 @@
+.order-form {
+  padding: 23px 30px 55px;
+}
+
+.order-form__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  color: $font-darkgrey;
+}
+
+.order-form__fieldset {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #63d1bb;
+
+  &--radio {
+    padding-bottom: 28px;
+    margin-bottom: 19px;
+    padding-top: 28px;
+  }
+
+  &--checkbox {
+    padding-top: 19px;
+    padding-bottom: 31px;
+  }
+
+  &--name {
+    padding-top: 36px;
+    padding-bottom: 17px;
+  }
+
+  &--tel {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+
+  &--mail {
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+
+  &--textarea {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+}
+
+.order-form__legend {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  padding-right: 19px;
+  padding-left: 0;
+  color: $font-tiffany;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  display: block;
+}
+
+.order-form__input-wrapper {
+  position: relative;
+
+  &--radio {
+    padding: 10px 0 2px 62px;
+  }
+
+  &--checkbox {
+    padding: 22px 0 15px 64px;
+  }
+
+  &--text {
+    margin-bottom: 22px;
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 16px 0;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 18px;
+      color: rgba(68,68,68,0.3);
+      border: 0;
+      border-bottom: 2px solid #000000;
+      outline: 0;
+      background-color: transparent;
+    }
+
+    label {
+      display: block;
+    }
+  }
+
+  &--textarea {
+    textarea {
+      overflow: auto;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 18px;
+      color: rgba(68,68,68,.3);
+      border: 2px solid #000;
+      outline: 0;
+      resize: none;
+    }
+  }
+}
+
+.order-form__input-wrapper label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.order-form__input-wrapper input[type="radio"] {
+  display: none;
+}
+
+.order-form__input-wrapper input[type="radio"]:checked+label::before {
+  background-color: #63d1bb;
+}
+
+.order-form__input-wrapper input[type="radio"]+label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 24px;
+  left: 2px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #444444;
+}
+
+.order-form__input-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.order-form__input-wrapper input[type="checkbox"]+label::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 35px;
+  top: 32px;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 2px solid #444444;
+}
+
+.order-form__input-wrapper input[type="checkbox"]:checked+label::before {
+  background: url("../img/icon-tick.svg") no-repeat center;
+  background-size: 60%;
+}
+
+.order-form__required {
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-darkgrey;
+  margin-bottom: 31px;
+}
+
+.order-form__submit {
+  width: 100%;
+}
+@media #{$tablet-widths} {
+  .order-form {
+    padding: 75px 0 50px;
+  }
+
+  .order-form__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
+
+  .order-form__fieldset-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .order-form__fieldset {
+    border: 0;
+    padding: 0 50px;
+
+    &--radio {
+      margin-bottom: 0;
+      padding-top: 31px;
+      padding-bottom: 21px;
+    }
+
+    &--checkbox {
+      padding-top: 43px;
+      padding-bottom: 36px;
+    }
+
+    &--name {
+      padding-top: 47px;
+      padding-bottom: 29px;
+    }
+
+    &--tel {
+      padding-top: 47px;
+      padding-bottom: 0;
+    }
+
+    &--mail {
+      padding-top: 0;
+      padding-bottom: 29px;
+    }
+
+    &--textarea {
+      padding: 50px 50px 53px;
+    }
+
+    &--gray {
+      background-color: $bg-lightgrey;
+    }
+  }
+
+  .order-form__input-wrapper input[type="radio"]+label::before {
+    width: 22px;
+    height: 22px;
+    top: 21px;
+    border: 13px solid #ffffff;
+  }
+
+  .order-form__input-wrapper input[type="checkbox"]+label::before {
+    width: 50px;
+    height: 48px;
+    top: 34px;
+  }
+
+  .order-form__inner-wrapper {
+    width: 501px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    &--radio {
+      flex-direction: column;
+    }
+
+    &--checkbox {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &--name {
+      flex-direction: column;
+    }
+  }
+
+  .order-form__input-wrapper {
+    font-size: 19px;
+    line-height: 18px;
+
+    label {
+      font-size: 19px;
+    }
+
+    &--radio {
+      padding-left: 80px;
+      margin-bottom: 46px;
+    }
+
+    &--checkbox {
+      width: 240px;
+      box-sizing: border-box;
+      padding-left: 81px;
+      padding-bottom: 22px;
+      margin-bottom: 13px;
+
+      &:nth-child(2n-1) {
+        margin-right: 20px;
+      }
+    }
+
+    &--text {
+      width: 100%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0;
+
+      input {
+        flex-grow: 1;
+        margin-left: 28px;
+        padding-left: 13px;
+        font-size: 19px;
+      }
+    }
+
+    &--textarea {
+      textarea {
+        font-size: 19px;
+      }
+    }
+
+    &--name {}
+  }
+
+  .order-form__legend {
+    width: 167px;
+    padding: 0;
+    position: static;
+    background-color: transparent;
+  }
+
+  .order-form__footer {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: baseline;
+    padding: 0 50px;
+  }
+
+  .order-form__required {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order-form__submit {
+    width: 230px;
+    margin: 0;
+    order: -1;
+  }
+}

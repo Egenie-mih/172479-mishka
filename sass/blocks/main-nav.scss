@@ -1,0 +1,135 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item {
+  font-weight: 700;
+  font-size: 17px;
+  background: $bg-white;
+  border-bottom: #ececec solid 1px;
+
+  &--hidden{
+    display: none;
+  }
+  &--delivery{
+    display: none;
+  }
+}
+.main-nav__link {
+  display: block;
+  padding: 27px 60px 27px 75px;
+  color: $font-black;
+  text-decoration: none;
+}
+
+@media #{$tablet-widths} {
+  .main-nav{
+    z-index: 2;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .main-nav__item{
+    border: 0;
+    padding-left: 0;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: transparent;
+
+    &--user{
+      box-sizing: border-box;
+    }
+    &--search{
+      width: 12.5%;
+      border-right: 1px solid #f1f1f1;
+      border-left: 1px solid #f1f1f1;
+    }
+    &--basket{
+      width: 39.5%;
+      text-align: right;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &--catalog {
+      order: 1;
+      padding: 18px 36px 18px 0px;
+    }
+    &--order {
+      order: 2;
+      padding: 18px 36px 18px 0px;
+    }
+    &--delivery{
+      display: block;
+      flex-grow: 1;
+      font-weight: normal;
+      order: 999;
+      padding: 18px 0;
+      text-align: right;
+    }
+  }
+  .main-nav__link{
+    padding: 0;
+    &--search{
+      font-size: 0;
+      padding: 27px 0;
+      padding: 31px 0px 17px;
+
+    }
+    &--basket{
+      padding: 31px 0px 33px 82px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-nav {
+        width: 1050px;
+  }
+  .main-nav__item{
+
+    &--user{
+      box-sizing: border-box;
+    }
+    &--search{
+      order: 4;
+      width: 85px;
+
+    }
+    &--basket{
+      order: 5;
+      width: 265px;
+    }
+    &--catalog {
+      order: 1;
+      padding: 31px 0px;
+      width: 185px;
+      box-sizing: border-box;
+      border-right: 1px solid #f1f1f1;
+      font-size: 17px;
+      margin-right: 35px;
+    }
+    &--order {
+      order: 2;
+      padding: 31px 0px;
+      width: 185px;
+      box-sizing: border-box;
+      margin-right: 45px;
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &--hidden {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      order: 6;
+      padding: 19px 0;
+      width: 185px;
+      margin-right: 35px;
+    }
+  }
+}

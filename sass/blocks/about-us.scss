@@ -1,0 +1,121 @@
+.about-us{
+  @include container();
+  padding: 40px 30px 15px;
+  font-weight: 700;
+}
+.about-us__title{
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.about-us__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.about-us__item{
+  position: relative;
+  padding-top: 55px;
+  padding-right: 10px;
+  margin-bottom: 28px;
+  font-size: 17px;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 41px;
+    top: 0;
+    left: 0;
+  }
+  &--flower::before {
+    top: 1px;
+    left: 10px;
+    background: url("../img/icon-feature-1.svg") no-repeat;
+  }
+  &--banknote::before {
+    top: 2px;
+    left: 2px;
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
+  &--heart::before {
+    top: 6px;
+    left: 9px;
+    background: url("../img/icon-feature-5.svg") no-repeat;
+  }
+  &--woolenball::before {
+    top: 4px;
+    left: 5px;
+    background: url("../img/icon-feature-2.svg") no-repeat;
+  }
+  &--rocket::before {
+    top: 5px;
+    left: -5px;
+    background: url("../img/icon-feature-4.svg") no-repeat;
+  }
+  &--gift::before {
+    top: 2px;
+    left: 5px;
+    background: url("../img/icon-feature-6.svg") no-repeat;
+  }
+}
+
+@media #{$tablet-widths} {
+  .about-us{
+    padding: 65px 50px 25px;
+  }
+  .about-us__title{
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
+  .about-us__list{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-us__item{
+    width: 50%;
+    padding-right: 40px;
+    margin-bottom: 57px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower{
+      order: 0;
+    }
+    &--banknote{
+      order: 2;
+    }
+    &--heart{
+      order: 4;
+    }
+    &--woolenball{
+      order: 1;
+    }
+    &--rocket{
+      order: 3;
+    }
+    &--gift{
+      order: 5;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .about-us{
+    width: 700px;
+    margin: 0 auto;
+    padding: 99px 50px 25px;
+  }
+  .about-us__title{
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 48px;
+  }
+
+}
