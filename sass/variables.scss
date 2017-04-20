@@ -1,18 +1,18 @@
-$mobile-widths-only: "(max-width: 767px)";
-$tablet-widths: "(min-width: 768px)";
-$desktop-widths: "(min-width: 1150px)";
+$mobile-widths-only: '(max-width: 767px)';
+$tablet-widths: '(min-width: 768px)';
+$desktop-widths: '(min-width: 1150px)';
 
-$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+$retina: '(min-resolution: 144dpi), (min-resolution: 1.5dppx)';
 
-$font-white: #ffffff;
-$font-black: #000000;
+$font-white: #fff;
+$font-black: #000;
 $font-tiffany: #63d1bb;
-$font-darkgrey: #444444;
+$font-darkgrey: #444;
 
 // $icon-fill: #63d1bb;
 // $icon-fill-effect: #46c1ae;
 
-$bg-white: #ffffff;
+$bg-white: #fff;
 $bg-lightgrey: #f1f1f1;
 $bg-tiffany: #63d1bb;
 $bg-tiffany-effect: #59d5bc;
