@@ -34,7 +34,7 @@
     font-weight: 700;
     line-height: 30px;
 
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 121px;
     padding: 0 30px;
 
@@ -106,6 +106,7 @@
         line-height: 50px;
 
         margin-bottom: 350px;
+        max-width: 750px;
     }
 
     .page-header__nav-btn
@@ -164,6 +165,7 @@
         font-size: 53px;
         line-height: 57px;
 
+        max-width: 1000px;
         margin-bottom: 359px;
     }
 

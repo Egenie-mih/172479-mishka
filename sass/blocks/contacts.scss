@@ -20,9 +20,7 @@
 }
 .contacts__email
 {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
 
     margin-bottom: 29px;
 
@@ -30,9 +28,7 @@
 }
 .contacts__address
 {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
 }
 .contacts__name
 {
@@ -124,9 +120,7 @@
         font-size: 17px;
         line-height: 30px;
 
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
         flex-direction: row;
 
         margin-bottom: 56px;

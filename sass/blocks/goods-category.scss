@@ -1,8 +1,6 @@
 .goods-category
 {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -17,8 +15,7 @@
 
         &:hover
         {
-            -webkit-transform: translateY(-5px);
-                    transform: translateY(-5px);
+            transform: translateY(-5px);
 
             background-color: $bg-tiffany-effect;
             box-shadow: 0 5px 0 0 $bg-tiffany-effect;
@@ -28,6 +25,7 @@
         {
             color: rgba($font-white, .3);
             background-color: $bg-darktiffany-effect;
+            box-shadow: 0 5px 0 0 $bg-darktiffany-effect;
         }
     }
     &--toys
@@ -36,8 +34,7 @@
 
         &:hover
         {
-            -webkit-transform: translateY(-5px);
-                    transform: translateY(-5px);
+            transform: translateY(-5px);
 
             background-color: $bg-darktiffany-effect;
             box-shadow: 0 5px 0 0 $bg-darktiffany-effect;
@@ -87,8 +84,7 @@
 
         &:hover
         {
-            -webkit-transform: translateY(-5px);
-                    transform: translateY(-5px);
+            transform: translateY(-5px);
 
             background-color: $bg-tiffany-effect;
             box-shadow: 0 5px 0 0 $bg-tiffany-effect;
@@ -98,6 +94,7 @@
         {
             color: rgba($font-white, .3);
             background-color: $bg-darktiffany-effect;
+            box-shadow: 0 5px 0 0 $bg-darktiffany-effect;
         }
     }
 
@@ -125,8 +122,8 @@
 
         &:hover
         {
-            -webkit-transform: translateY(-5px);
-                    transform: translateY(-5px);
+
+            transform: translateY(-5px);
 
             background-color: $bg-darktiffany-effect;
             box-shadow: 0 5px 0 0 $bg-darktiffany-effect;

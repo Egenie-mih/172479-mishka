@@ -262,6 +262,7 @@
             display: block;
 
             padding: 18px 0;
+            max-width: 320px;
 
             text-align: right;
 
@@ -283,7 +284,7 @@
         }
         &--basket
         {
-            padding: 31px 0 33px 82px;
+            padding: 31px 0 33px 66px;
         }
     }
     .main-nav--closed .main-nav__item
@@ -347,9 +348,7 @@
         }
         &--hidden
         {
-            display: -webkit-flex;
-            display:     -ms-flex;
-            display:         flex;
+            display: flex;
 
             width: 185px;
             margin-right: 35px;
@@ -359,6 +358,7 @@
         }
         &--delivery
         {
+            max-width: 610px;
             padding: 18px 0;
         }
     }

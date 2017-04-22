@@ -1,8 +1,6 @@
 .catalog
 {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
     flex-direction: column;
 
     padding: 30px;
@@ -78,9 +76,7 @@
 }
 .catalog__price
 {
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
 
     padding-top: 21px;
 
@@ -124,9 +120,7 @@
     }
     .catalog__item
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
 
         margin-bottom: 54px;
     }
@@ -141,9 +135,7 @@
     }
     .catalog__description
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
         flex-direction: column;
 
         padding: 26px 27px 18px;

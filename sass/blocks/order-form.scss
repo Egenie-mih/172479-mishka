@@ -110,6 +110,8 @@
             font-size: 17px;
             font-weight: 400;
             line-height: 18px;
+            font-family: "Open Sans","Arial",sans-serif;
+
 
             display: block;
 
@@ -122,6 +124,15 @@
             border-bottom: 2px solid #000;
             outline: 0;
             background-color: transparent;
+
+            &::-webkit-input-placeholder,
+            &:-ms-input-placeholder,
+            &::-ms-input-placeholder {
+              font-weight: 400;
+              font-size: 19px;
+              color: #d2d2d2;
+              font-style: normal;
+            }
 
             &:hover
             {
@@ -190,6 +201,7 @@
             font-size: 17px;
             font-weight: 400;
             line-height: 18px;
+            font-family: "Open Sans","Arial",sans-serif;
 
             display: block;
             overflow: auto;
@@ -262,8 +274,7 @@
         height: 15px;
 
         content: '';
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
 
         border: 10px solid #fff;
         border-radius: 50%;
@@ -301,8 +312,7 @@
         height: 35px;
 
         content: '';
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
 
         border: 2px solid #444;
 
@@ -356,9 +366,7 @@
 
     .order-form__fieldset-wrapper
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
 
         max-width: 700px;
         margin: 0 auto;
@@ -434,9 +442,7 @@
 
     .order-form__inner-wrapper
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
 
         width: 501px;
 
@@ -490,9 +496,7 @@
 
         &--text
         {
-            display: -webkit-flex;
-            display:     -ms-flex;
-            display:         flex;
+            display: flex;
 
             width: 100%;
             margin-bottom: 0;
@@ -559,9 +563,7 @@
 
     .order-form__footer
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
 
         padding: 0 50px;
 

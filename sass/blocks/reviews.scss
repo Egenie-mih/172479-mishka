@@ -56,9 +56,7 @@
 .reviews__controls
 {
     display: block;
-    display: -webkit-flex;
-    display:     -ms-flex;
-    display:         flex;
+    display: flex;
 
     height: 50px;
     margin-bottom: 38px;
@@ -114,9 +112,8 @@
     }
     .reviews__wrapper
     {
-        display: -webkit-flex;
-        display:     -ms-flex;
-        display:         flex;
+        display: flex;
+        align-items: flex-start;
         flex-direction: row;
 
         padding: 76px 50px 98px;
