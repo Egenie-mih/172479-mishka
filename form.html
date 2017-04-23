@@ -54,7 +54,7 @@
         <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order-form__fieldset order-form__fieldset--radio">
           <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">Тип</span>
+            <div class="order-form__legend">Тип</div>
             <div class="order-form__inner-wrapper order-form__inner-wrapper--radio">
               <div class="order-form__input-wrapper order-form__input-wrapper--radio">
                 <input type="radio" name="type" id="accessoire" value="accessoire" checked>
@@ -69,7 +69,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset  order-form__fieldset--checkbox order-form__fieldset--gray">
           <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">Цвет</span>
+            <div class="order-form__legend">Цвет</div>
             <div class="order-form__inner-wrapper order-form__inner-wrapper--checkbox">
               <div class="order-form__input-wrapper order-form__input-wrapper--checkbox">
                 <input type="checkbox" name="white" id="white" checked>
@@ -100,7 +100,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--name">
           <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">ФИО</span>
+            <div class="order-form__legend">ФИО</div>
             <div class="order-form__inner-wrapper order-form__inner-wrapper--name">
               <div class="order-form__input-wrapper order-form__input-wrapper--text">
                 <label for="name">Имя:</label>
@@ -119,31 +119,37 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--tel order-form__fieldset--gray">
           <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">Тел</span>
-            <div class="order-form__inner-wrapper order-form__input-wrapper--text order-form__input-wrapper--tel">
-              <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-              <svg width="25" height="25">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
+            <div class="order-form__legend">Тел</div>
+            <div class="order-form__inner-wrapper">
+              <div class="order-form__input-wrapper order-form__input-wrapper--text order-form__input-wrapper--tel">
+                <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--mail order-form__fieldset--gray">
           <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">E-mail</span>
-            <div class="order-form__inner-wrapper order-form__input-wrapper--text order-form__input-wrapper--mail">
-              <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
-              <svg width="32" height="32">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
+            <div class="order-form__legend">E-mail</div>
+            <div class="order-form__inner-wrapper">
+              <div class="order-form__input-wrapper order-form__input-wrapper--text order-form__input-wrapper--mail">
+                <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset order-form__fieldset--textarea">
-          <div class="order-form__fieldset-wrapper">
-            <span class="order-form__legend">Доп</span>
-            <div class="order-form__inner-wrapper order-form__input-wrapper--textarea">
-              <textarea name="comment" id="comment" rows="6" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--textarea">
+            <div class="order-form__legend">Доп</div>
+            <div class="order-form__inner-wrapper">
+              <div class="order-form__input-wrapper order-form__input-wrapper--textarea">
+                <textarea name="comment" id="comment" rows="6" cols="40" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </div>
           </div>
         </fieldset>

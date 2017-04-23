@@ -148,7 +148,8 @@
     .reviews__write
     {
         box-sizing: border-box;
-        width: 175px;
+        min-width: 175px;
+        max-width: 250px;
         margin: 0;
 
         order: -1;

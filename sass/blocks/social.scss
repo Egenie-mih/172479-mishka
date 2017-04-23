@@ -1,16 +1,14 @@
 .social
 {
     display: flex;
-
-    width: 140px;
+    min-width: 180px;
+    max-width: 300px;
     margin: 0 auto;
-    padding: 22px 62px 28px 57px;
-
-    text-align: center;
+    padding: 15px 53px 19px 38px;
 
     border-bottom: 1px solid #e5e5e5;
 
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .social__link
@@ -19,11 +17,19 @@
 
     position: relative;
 
-    text-align: center;
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
 
     svg
     {
         position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
 
         &:hover
         {
@@ -34,44 +40,13 @@
             opacity: .3;
         }
     }
-
-    &--instagram
-    {
-        width: 22px;
-        height: 21px;
-        svg
-        {
-            top: 9px;
-            left: -2px;
-        }
-    }
-    &--facebook
-    {
-        width: 17px;
-        height: 30px;
-
-        svg
-        {
-            top: 3px;
-            left: 0;
-        }
-    }
-    &--twitter
-    {
-        width: 24px;
-        height: 29px;
-        svg
-        {
-            top: 4px;
-            left: -1px;
-        }
-    }
 }
 
 @media #{$tablet-widths}
 {
     .social
     {
+        padding: 17px 50px 22px 50px;
         border: 0;
     }
 }
