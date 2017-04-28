@@ -1,5 +1,7 @@
 .contacts
 {
+    width: 320px;
+    margin: 0 auto;
     padding: 35px 0 39px;
 }
 .contacts__title
@@ -89,6 +91,7 @@
 {
     .contacts
     {
+        width: 768px;
         padding: 62px 0 56px;
     }
     .contacts__title
@@ -170,8 +173,7 @@
         position: relative;
 
         box-sizing: border-box;
-        max-width: 1150px;
-        margin: 0 auto;
+        width: 1150px;
         padding: 70px 50px 105px 225px;
     }
     .contacts__title

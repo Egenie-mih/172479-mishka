@@ -7,6 +7,8 @@
 }
 .best-product__wrapper
 {
+    width: 260px;
+    margin: 0 auto;
     padding: 27px 30px 41px;
 
     @include container();
@@ -99,6 +101,7 @@
     {
         position: relative;
 
+        width: 668px;
         padding: 33px 50px 70px;
     }
     .best-product__header
@@ -177,6 +180,7 @@
     }
     .best-product__wrapper
     {
+        width: 1050px;
         padding-top: 104px;
         padding-bottom: 95px;
     }

@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: column;
 
-    padding: 30px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 30px 30px 33px;
 
     @include container();
     justify-content: space-between;
@@ -116,6 +118,7 @@
 {
     .catalog
     {
+        width: 668px;
         padding: 68px 50px 53px;
     }
     .catalog__item
@@ -177,7 +180,8 @@
     {
         flex-direction: row;
 
-        padding-top: 108px;
+        width: 1050px;
+        padding-top: 112px;
         padding-bottom: 57px;
 
         justify-content: space-between;

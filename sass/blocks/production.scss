@@ -1,11 +1,13 @@
 .production
 {
-    padding: 0 30px 58px;
+    padding: 0 30px 61px;
 
     @include container();
 }
-.production__inner
+.production__wrapper
 {
+    width: 260px;
+    margin: 0 auto;
     padding: 23px 0 30px;
 
     border: 1px solid #ececec;
@@ -115,11 +117,12 @@
     {
         padding-bottom: 63px;
     }
-    .production__inner
+    .production__wrapper
     {
         display: flex;
         flex-direction: column;
 
+        width: 668px;
         padding-top: 0;
         padding-bottom: 45px;
     }
@@ -168,13 +171,14 @@
     {
         padding-bottom: 104px;
     }
-    .production__inner
+    .production__wrapper
     {
         position: relative;
 
         flex-direction: column;
 
         box-sizing: border-box;
+        width: 1050px;
         min-height: 456px;
 
         align-items: flex-end;
@@ -182,6 +186,7 @@
     .production__video
     {
         position: absolute;
+        z-index: 1;
         top: -1px;
         left: 0;
 
