@@ -2,8 +2,6 @@
 {
     font-weight: 700;
 
-    width: 260px;
-    margin: 0 auto;
     padding: 28px 30px 15px;
 
     @include container();
@@ -98,7 +96,6 @@
 {
     .about-us
     {
-        width: 668px;
         padding: 48px 50px 25px;
     }
 

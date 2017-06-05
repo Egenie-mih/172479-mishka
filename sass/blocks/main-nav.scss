@@ -261,8 +261,8 @@
 
             display: block;
 
-            max-width: 320px;
             padding: 18px 0;
+            max-width: 320px;
 
             text-align: right;
 
@@ -294,10 +294,6 @@
     .main-nav--closed .main-nav__item--hidden
     {
         display: none;
-    }
-    .main-nav--opened .main-nav__item--delivery
-    {
-        display: block;
     }
 }
 @media #{$desktop-widths}
@@ -367,10 +363,6 @@
         }
     }
     .main-nav--closed .main-nav__item--hidden
-    {
-        display: block;
-    }
-    .main-nav--opened .main-nav__item--hidden
     {
         display: block;
     }

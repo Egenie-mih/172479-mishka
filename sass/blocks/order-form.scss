@@ -1,9 +1,8 @@
 .order-form
 {
-    width: 260px;
-    margin: 0 auto;
     padding: 23px 30px 55px;
 }
+
 
 .order-form__text
 {
@@ -64,11 +63,7 @@
         padding-bottom: 16px;
     }
 }
-.order-form__fieldset-wrapper
-{
-    width: 260px;
-    margin: 0 auto;
-}
+
 .order-form__legend
 {
     font-size: 17px;
@@ -112,11 +107,12 @@
 
         input
         {
-            font-family: $font;
             font-size: 17px;
             font-weight: 400;
             font-style: normal;
             line-height: 18px;
+            font-family: "Open Sans","Arial",sans-serif;
+
 
             display: block;
 
@@ -124,32 +120,17 @@
             margin-bottom: 20px;
             padding: 16px 0;
 
-            color: #444;
+            color: #444444;
             border: 0;
             border-bottom: 2px solid #000;
             outline: 0;
             background-color: transparent;
 
-            &::-webkit-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &:-ms-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::-ms-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::-moz-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::placeholder
-            {
-                color: #d2d2d2;
-            }
+            &::-webkit-input-placeholder {color: #d2d2d2;}
+            &:-ms-input-placeholder {color: #d2d2d2;}
+            &::-ms-input-placeholder {color: #d2d2d2;}
+            &::-moz-placeholder {color: #d2d2d2;}
+            &::placeholder {color: #d2d2d2;}
 
             &:hover
             {
@@ -178,7 +159,7 @@
             display: block;
         }
 
-        svg
+        input+svg
         {
             position: absolute;
             top: 7px;
@@ -215,10 +196,10 @@
     {
         textarea
         {
-            font-family: $font;
             font-size: 17px;
             font-weight: 400;
             line-height: 18px;
+            font-family: "Open Sans","Arial",sans-serif;
 
             display: block;
             overflow: auto;
@@ -233,26 +214,11 @@
             border: 2px solid #000;
             outline: 0;
 
-            &::-webkit-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &:-ms-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::-ms-input-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::-moz-placeholder
-            {
-                color: #d2d2d2;
-            }
-            &::placeholder
-            {
-                color: #d2d2d2;
-            }
+            &::-webkit-input-placeholder {color: #d2d2d2;}
+            &:-ms-input-placeholder {color: #d2d2d2;}
+            &::-ms-input-placeholder {color: #d2d2d2;}
+            &::-moz-placeholder {color: #d2d2d2;}
+            &::placeholder {color: #d2d2d2;}
 
             &:hover
             {
@@ -389,8 +355,6 @@
 {
     .order-form
     {
-        width: auto;
-        margin: 0;
         padding: 62px 0 31px;
     }
 
@@ -408,14 +372,13 @@
     {
         display: flex;
 
-        width: 668px;
+        max-width: 700px;
         margin: 0 auto;
 
         align-items: baseline;
 
-        &--textarea
-        {
-            align-items: flex-start;
+        &--textarea {
+          align-items: flex-start;
         }
     }
 
@@ -453,7 +416,7 @@
         &--mail
         {
             padding-top: 0;
-            padding-bottom: 32px;
+            padding-bottom: 29px;
         }
 
         &--textarea
@@ -552,7 +515,6 @@
             {
                 font-size: 19px;
 
-                margin-bottom: 17px;
                 margin-left: 28px;
                 padding-right: 40px;
                 padding-left: 13px;
@@ -564,12 +526,11 @@
         {
             input
             {
-                margin-left: 0;
-                padding: 11px 40px 15px 22px;
+                padding: 18px 40px 15px 22px;
             }
             svg
             {
-                top: 11px;
+                top: 14px;
                 right: 26px;
             }
         }
@@ -577,7 +538,6 @@
         {
             input
             {
-                margin-left: 0;
                 padding: 17px 40px 15px 22px;
             }
             svg
@@ -594,6 +554,7 @@
                 font-size: 19px;
             }
         }
+
     }
 
     .order-form__legend
@@ -610,9 +571,9 @@
     {
         display: flex;
 
-        width: 668px;
-        margin: 0 auto;
         padding: 0 50px;
+        max-width: 700px;
+        margin: 0 auto;
 
         justify-content: space-between;
         align-items: flex-start;
@@ -647,7 +608,7 @@
     }
     .order-form__fieldset-wrapper
     {
-        width: 1050px;
+        max-width: 1070px;
         margin: 0 auto;
         padding: 0 40px;
     }
@@ -672,6 +633,7 @@
     .order-form__legend
     {
         width: 175px;
+        padding-right: 10px;
 
         text-align: center;
     }
@@ -732,5 +694,6 @@
     .order-form__footer
     {
         width: 700px;
+        margin: 0 auto;
     }
 }

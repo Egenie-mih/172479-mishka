@@ -1,7 +1,6 @@
 .modal
 {
     position: fixed;
-    z-index: 18;
     top: 0;
     right: 0;
     bottom: 0;
@@ -18,7 +17,7 @@
 .modal__overlay
 {
     position: absolute;
-    z-index: 19;
+    z-index: 10;
     top: 0;
     right: 0;
     bottom: 0;

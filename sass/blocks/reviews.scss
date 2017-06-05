@@ -9,8 +9,6 @@
 }
 .reviews__wrapper
 {
-    width: 260px;
-    margin: 0 auto;
     padding: 12px 30px 51px;
 
     @include container();
@@ -115,14 +113,13 @@
     .reviews__wrapper
     {
         display: flex;
+        align-items: flex-start;
         flex-direction: row;
 
-        width: 668px;
-        padding: 76px 50px 100px;
+        padding: 76px 50px 98px;
 
         background: url('../img/review@1x.jpg') no-repeat;
 
-        align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
         @media #{$retina}
@@ -188,11 +185,11 @@
     .reviews__wrapper
     {
         box-sizing: border-box;
-        width: 1150px;
+        max-width: 1150px;
         margin: 0 auto;
-        padding: 76px 0 155px 175px;
+        padding: 76px 50px 155px 225px;
 
-        background-position-x: 0;
+        background-position-x: 51px;
         background-position-y: 6px;
     }
     .reviews__title
