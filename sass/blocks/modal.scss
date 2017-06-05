@@ -1,0 +1,163 @@
+.modal
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    &--opened
+    {
+        display: block;
+    }
+}
+
+.modal__overlay
+{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.modal__form
+{
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+
+    box-sizing: border-box;
+    width: 320px;
+    height: 338px;
+    padding: 30px 30px 45px;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid #c6c6c6;
+    background-color: $bg-white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+}
+
+.modal__title
+{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+
+    margin: 0;
+    margin-bottom: 12px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__desc
+{
+    font-size: 15px;
+    line-height: 30px;
+
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 22px;
+
+    text-align: center;
+
+    color: $font-darkgrey;
+}
+
+.modal__container
+{
+    display: flex;
+
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.modal__input
+{
+    display: none;
+}
+
+.modal__label
+{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 50px;
+
+    display: block;
+
+    width: 76px;
+    height: 50px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: $font-darkgrey;
+    border: 2px solid rgba(68, 68, 68, .1);
+
+    &:hover
+    {
+        border-color: rgba(68, 68, 68, .3);
+    }
+}
+
+.modal__submit
+{
+    width: 100%;
+    max-width: none;
+
+    color: $font-white;
+    border: none;
+    background-color: $bg-tiffany;
+
+    &:hover
+    {
+        background-color: $bg-tiffany-effect;
+    }
+
+    &:active
+    {
+        background-color: $bg-darktiffany-effect;
+    }
+}
+
+.modal__input:checked ~ .modal__label
+{
+    border-color: #62d1ba;
+}
+
+@media screen and (min-width: 768px)
+{
+    .modal__form
+    {
+        width: 568px;
+        padding: 35px 108px 46px;
+    }
+
+    .modal__title
+    {
+        font-size: 28px;
+        line-height: 57px;
+
+        letter-spacing: 1px;
+    }
+
+    .modal__desc
+    {
+        font-size: 17px;
+    }
+
+    .modal__label
+    {
+        width: 108px;
+    }
+}

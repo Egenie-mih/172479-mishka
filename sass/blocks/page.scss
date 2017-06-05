@@ -1,0 +1,20 @@
+.page
+{
+    font-family: $font;
+    font-size: 17px;
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 320px;
+    min-height: 100vh;
+
+    color: $page-color;
+    background-color: $page;
+
+    &--fixed
+    {
+        overflow: hidden;
+    }
+}
